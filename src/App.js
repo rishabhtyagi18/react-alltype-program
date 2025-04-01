@@ -9,6 +9,14 @@ import Sidebar from './Components/SideBarNavigation/Sidebar'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CartComponent from './Components/FetchCartDisplayItem/CartComponent';
 import CharacterMovies from './Components/MovieApp/CharacterMovies'
+import CommentSection from './Components/CommentsLikeReddit/CommentSection';
+import withTimerHOC from './Components/TimerWithHOC/withTimerHOC';
+import TimerDisplay from './Components/TimerWithHOC/TimerDisplay';
+import CountdownTimer from './Components/TimerWithHOC/CountdownTimer';
+import GridSequence from './Components/GridSequence/GridSequence';
+import CountDownTimerWithButtons from './Components/CountDownTimerWithButtons/CountDownTimerWithButtons';
+
+const EnhancedTimerDisplay = withTimerHOC(TimerDisplay);
 
 function App() {
   return (
@@ -30,7 +38,23 @@ function App() {
     //   </div>
     // </Router>
     // <CartComponent />
-    <CharacterMovies />
+    // <CharacterMovies />
+
+    // <div>
+    //   <h1>Reddit-like Comment System</h1>
+    //   <CommentSection />
+    // </div>
+
+
+    // <div>
+    //   <h1>Higher-Order Component Timer Example</h1>
+    //   <EnhancedTimerDisplay />
+    //   <CountdownTimer startSeconds={10} />
+    // </div>
+
+    // <GridSequence />
+
+    <CountDownTimerWithButtons />
   );
 }
 

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "text": "This is the first comment.",
+        "replies": [
+            {
+                "id": 2,
+                "text": "This is a reply to the first comment.",
+                "replies": []
+            },
+            {
+                "id": 3,
+                "text": "This is another reply to the first comment.",
+                "replies": [
+                    {
+                        "id": 4,
+                        "text": "This is a reply to the second comment.",
+                        "replies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "text": "This is the second comment.",
+        "replies": []
+    }
+]

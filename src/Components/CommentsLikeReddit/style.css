@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Comment Section */
+h2 {
+    color: #333;
+}
+
+/* Comment Styles */
+.comment {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+/* Reply Button */
+.reply-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.reply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Edit and Delete Buttons */
+.edit-button,
+.delete-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.edit-button:hover {
+    background-color: #5a6268;
+}
+
+.delete-button:hover {
+    background-color: #dc3545;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Nested Comments */
+.nested {
+    margin-left: 20px; /* Indent nested comments */
+}
+
+/* Form Styles */
+form {
+    margin-top: 10px;
+}
+
+/* Comment Author */
+.comment-author {
+    font-weight: bold;
+    color: #007bff;
+}
