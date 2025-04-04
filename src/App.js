@@ -15,6 +15,10 @@ import TimerDisplay from './Components/TimerWithHOC/TimerDisplay';
 import CountdownTimer from './Components/TimerWithHOC/CountdownTimer';
 import GridSequence from './Components/GridSequence/GridSequence';
 import CountDownTimerWithButtons from './Components/CountDownTimerWithButtons/CountDownTimerWithButtons';
+import { ThemeProvider } from './Context/ThemeProvider';
+import { ToolbarUseContext } from './Components/ToolbarUseContext/ToolbarUseContext';
+import ApiTableDate from './Components/ApiCallBasedIDTabelData/ApiTableDate';
+import WithLoading from './Components/LoadingWithHOC/WithLoading';
 
 const EnhancedTimerDisplay = withTimerHOC(TimerDisplay);
 
@@ -22,21 +26,23 @@ function App() {
   return (
     // <SearchComponent />
     // <div style={styles.container}>
-    //   {/* <DropdownWithDetails /> */}
-    //   <FlipkartProductPage />
+      // <DropdownWithDetails />
+      // <FlipkartProductPage />
     // </div>
 
-    // <Router>
-    //   <div style={{ display: 'flex' }}>
-    //     <Sidebar />
-    //     <div style={{ marginLeft: '240px', padding: '20px', flexGrow: 1 }}>
-    //       <Routes>
-    //         <Route path="/" element={<h1>Dashboard</h1>} />
-    //         <Route path="/table" element={<DataTable />} />
-    //       </Routes>
-    //     </div>
-    //   </div>
-    // </Router>
+    <Router>
+      <div style={{ display: 'flex' }}>
+        <Sidebar />
+        <div style={{ marginLeft: '240px', padding: '20px', flexGrow: 1 }}>
+          <Routes>
+            <Route path="/" element={<h1>Dashboard</h1>} />
+            <Route path="/table" element={<DataTable />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+
+    
     // <CartComponent />
     // <CharacterMovies />
 
@@ -54,7 +60,14 @@ function App() {
 
     // <GridSequence />
 
-    <CountDownTimerWithButtons />
+    // <CountDownTimerWithButtons />
+    // <ThemeProvider>
+    //   <ToolbarUseContext />
+    // </ThemeProvider>
+
+    // <ApiTableDate />
+
+    // <WithLoading />
   );
 }
 
