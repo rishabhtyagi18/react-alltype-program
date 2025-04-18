@@ -19,6 +19,9 @@ import { ThemeProvider } from './Context/ThemeProvider';
 import { ToolbarUseContext } from './Components/ToolbarUseContext/ToolbarUseContext';
 import ApiTableDate from './Components/ApiCallBasedIDTabelData/ApiTableDate';
 import WithLoading from './Components/LoadingWithHOC/WithLoading';
+import StepProgress from './Components/StepProgress/StepProgress';
+import ImageCarousel from './Components/ImageCarousel/ImageCarousel';
+import Carousel from './Components/ImageCarousel/Carousel';
 
 const EnhancedTimerDisplay = withTimerHOC(TimerDisplay);
 
@@ -30,17 +33,17 @@ function App() {
       // <FlipkartProductPage />
     // </div>
 
-    <Router>
-      <div style={{ display: 'flex' }}>
-        <Sidebar />
-        <div style={{ marginLeft: '240px', padding: '20px', flexGrow: 1 }}>
-          <Routes>
-            <Route path="/" element={<h1>Dashboard</h1>} />
-            <Route path="/table" element={<DataTable />} />
-          </Routes>
-        </div>
-      </div>
-    </Router>
+    // <Router>
+    //   <div style={{ display: 'flex' }}>
+    //     <Sidebar />
+    //     <div style={{ marginLeft: '240px', padding: '20px', flexGrow: 1 }}>
+    //       <Routes>
+    //         <Route path="/" element={<h1>Dashboard</h1>} />
+    //         <Route path="/table" element={<DataTable />} />
+    //       </Routes>
+    //     </div>
+    //   </div>
+    // </Router>
 
     
     // <CartComponent />
@@ -68,7 +71,16 @@ function App() {
     // <ApiTableDate />
 
     // <WithLoading />
-  );
+
+    // <div>
+    //   <h1>Step Progress Component</h1>
+    //   <StepProgress />
+    // </div>
+
+    <ImageCarousel>
+      {(photos) => <Carousel photos={photos} />}
+    </ImageCarousel>
+);
 }
 
 const styles = {

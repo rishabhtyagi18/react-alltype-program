@@ -83,3 +83,22 @@ option {
   max-width: 100%;
   height: auto;
 }
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.embla__slide img {
+  width: 100%;
+  height: auto;
+}
