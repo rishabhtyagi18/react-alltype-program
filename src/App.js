@@ -22,6 +22,9 @@ import WithLoading from './Components/LoadingWithHOC/WithLoading';
 import StepProgress from './Components/StepProgress/StepProgress';
 import ImageCarousel from './Components/ImageCarousel/ImageCarousel';
 import Carousel from './Components/ImageCarousel/Carousel';
+import Calculator from './Components/MakingCalculator/Calculator';
+import GoogleSearchReplica from './Components/GoogleSearchReplica/GoogleSearchReplica';
+import NQueens from './Components/NQueens/NQueens'
 
 const EnhancedTimerDisplay = withTimerHOC(TimerDisplay);
 
@@ -77,9 +80,13 @@ function App() {
     //   <StepProgress />
     // </div>
 
-    <ImageCarousel>
-      {(photos) => <Carousel photos={photos} />}
-    </ImageCarousel>
+    // <ImageCarousel>
+    //   {(photos) => <Carousel photos={photos} />}
+    // </ImageCarousel>
+    
+    // <Calculator />
+    // <GoogleSearchReplica />
+    <NQueens />
 );
 }
 
